@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="tample.css">
+  <title>tamplet</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light -lg">
+    <div class="container-fluid">
+      <img class="navebar-brand" data-bs-target="tooltip" title="logo" src="./logo.png" width="60px" hight="60px"
+        alt="">
+      <div class="col-3"></div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Dishes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Review</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Order</a>
+          </li>
+
+        </ul>
+      </div>
+      <div id="icon11" class="col-sm-1">
+        <i  id="icon22" class="bi bi-search"></i>
+        <i  id="icon22" class="bi bi-heart-fill"></i>
+        <i  id="icon22" class="bi bi-cart3"></i>
+
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- slider -->
+
+  <div id="carouselExampleCaptions" style="height: 600px;" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./sldr 1.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>chargah</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./sldr 2.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>chicken Tandoori</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./sldr 3.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Fried Chicken</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <!-- cart -->
+
+
+   <div class="container-fluid bg-light">
+      <h2 id="h2" class="text-center mt-5">Our Dishes</h2>
+      <h3 id="h3" class="text-center">Popular Dishes</h3>
+        <div id="row1" class="justify-content-center mt-5">
+            <div id="shadow" class="card" style="width: 18rem; height: auto;">
+              <img src="./logo.png" height="250px" class="card-img-top" alt="">
+                 <div class="card-body">
+                      <h4 class="card-title text-center">Tasty Food</h4>
+                      <div class="card-icon text-center">
+                            <i id="icn1" class="bi bi-star-fill"></i>
+                            <i id="icn1" class="bi bi-star-fill"></i>
+                            <i id="icn1" class="bi bi-star-fill"></i>
+                            <i id="icn1" class="bi bi-star-half"></i>
+                      </div>
+                      <div class="mt-3 text-center">
+                        <span class="span1">$15.99</span>
+                        <button id="btn1" type="button" class="btn btn-primary">Add To Card</button>
+                      </div>            
+                 </div>
+            </div>
+            <div id="shadow" class="card" style="width: 18rem; height: auto;">
+              <img src="./logo.png" height="250px" class="card-img-top" alt="">
+                 <div class="card-body">
+                      <h4 class="card-title text-center">Tasty Food</h4>
+                      <div class="card-icon text-center">
+                            <i id="icn1" class="bi bi-star-fill"></i>
+                            <i id="icn1" class="bi bi-star-fill"></i>
+                            <i id="icn1" class="bi bi-star-fill"></i>
+                            <i id="icn1" class="bi bi-star-half"></i>
+                      </div>
+                      <div class="mt-3 text-center">
+                        <span class="span1">$15.99</span>
+                        <button id="btn1" type="button" class="btn btn-primary">Add To Card</button>
+                      </div>            
+                 </div>
+            </div>
+            <div id="shadow" class="card" style="width: 18rem; height: auto;">
+              <img src="./logo.png" height="250px" class="card-img-top" alt="">
+                 <div class="card-body">
+                      <h4 class="card-title text-center">Tasty Food</h4>
+                      <div class="card-icon text-center">
+                            <i id="icn1" class="bi bi-star-fill"></i>
+                            <i id="icn1" class="bi bi-star-fill"></i>
+                            <i id="icn1" class="bi bi-star-fill"></i>
+                            <i id="icn1" class="bi bi-star-half"></i>
+                      </div>
+                      <div class="mt-3 text-center">
+                        <span class="span1">$15.99</span>
+                        <button id="btn1" type="button" class="btn btn-primary">Add To Card</button>
+                      </div>            
+                 </div>
+            </div>
+         </div>
+        <div id="row1" class="justify-content-center mt-5">
+            <div id="shadow" class="card" style="width: 18rem; height: auto;">
+              <img src="./logo.png" height="250px" class="card-img-top" alt="">
+                 <div class="card-body">
+                      <h4 class="card-title text-center">Tasty Food</h4>
+                      <div class="card-icon text-center">
+                            <i id="icn1" class="bi bi-star-fill"></i>
+                            <i id="icn1" class="bi bi-star-fill"></i>
+                            <i id="icn1" class="bi bi-star-fill"></i>
+                            <i id="icn1" class="bi bi-star-half"></i>
+                      </div>
+                      <div class="mt-3 text-center">
+                        <span class="span1">$15.99</span>
+                        <button id="btn1" type="button" class="btn btn-primary">Add To Card</button>
+                      </div>            
+                 </div>
+            </div>
+            <div id="shadow" class="card" style="width: 18rem; height: auto;">
+              <img src="./logo.png" height="250px" class="card-img-top" alt="">
+                 <div class="card-body">
+                      <h4 class="card-title text-center">Tasty Food</h4>
+                      <div class="card-icon text-center">
+                            <i id="icn1" class="bi bi-star-fill"></i>
+                            <i id="icn1" class="bi bi-star-fill"></i>
+                            <i id="icn1" class="bi bi-star-fill"></i>
+                            <i id="icn1" class="bi bi-star-half"></i>
+                      </div>
+                      <div class="mt-3 text-center">
+                        <span class="span1">$15.99</span>
+                        <button id="btn1" type="button" class="btn btn-primary">Add To Card</button>
+                      </div>            
+                 </div>
+            </div>
+            <div id="shadow" class="card" style="width: 18rem; height: auto;">
+              <img src="./logo.png" height="250px" class="card-img-top" alt="">
+                 <div class="card-body">
+                      <h4 class="card-title text-center">Tasty Food</h4>
+                      <div class="card-icon text-center">
+                            <i id="icn1" class="bi bi-star-fill"></i>
+                            <i id="icn1" class="bi bi-star-fill"></i>
+                            <i id="icn1" class="bi bi-star-fill"></i>
+                            <i id="icn1" class="bi bi-star-half"></i>
+                      </div>
+                      <div class="mt-3 text-center">
+                        <span class="span1">$15.99</span>
+                        <button id="btn1" type="button" class="btn btn-primary">Add To Card</button>
+                      </div>            
+                 </div>
+            </div>
+         </div>
+    </div>
+
+    <!-- About us -->
+
+      <div class="container-fluid">
+        <h2 id="h4" class="text-center mt-5">About Us</h2>
+        <h5 id="h5" class="text-center">Why Choose Us?</h5>
+          <div class="mt-4 why">
+            <div class="imgabt col-6">
+              <img width="90%" class="justify-content-start" height="480px" src="./Screenshot 2023-06-01 161047.png" alt="">
+            </div>
+            <div class="textabt mt-5">
+              <h6 class="h6 ">Best food in the Country</h6>
+              <p class="para1">Lorem ipsum, dolor sit amet consectetur adipisicing<br>
+                 elit. Laudantium dolorum dolor ipsa at assumenda natus fugit veli<br>
+                  itaque, ipsam repellendus architecto libero, eveniet cumque dese<br>
+                  runt deleniti dicta cum repellat temporibus, voluptates incidunt<br>
+                    doloremque quos quisquam!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+                       Vitae quia doloremque fuga esse recusandae doloribus, 
+                       in atque  </p>
+                       <div class="box">
+                        <div class="text-center rounded free-delivery">
+                          <i id="icn2" class="bi- bi-truck"></i>
+                          <h7>free delivery</h7>
+                        </div>
+                        <div class="rounded text-center easy-payment">
+                          <i id="icn2" class="bi bi-currency-dollar"></i>
+                          <h8>easy payment</h8>
+                        </div>
+                        <div class="rounded text-center services-24">
+                          <i id="icn2" class="bi bi-headset"></i>
+                          <h9>24/7 Services</h9>
+                        </div>
+                        <br>
+                        <button type="button" id="btn3" class="btn mt-3 text-white">Learn More</button>
+                       </div>
+            </div>
+          </div>
+       </div>
+
+  <!-- our menu -->
+
+     <div class="container-fluid bg-light">
+        <h2 id="h2" class="text-center mt-20">Our Menu</h2>
+        <h3 id="h3" class="text-center">TODAY'S SPECIALITY</h3>
+          <div id="row1" class="justify-content-center mt-5">
+              <div id="shadow" class="card" style="width: 18rem; height: auto;">
+                <img src="./cart1.jpg" height="250px" class="card-img-top p-2 rounded-pills" alt="">
+                <i id="icn00" class="bi bi-heart-fill"></i>
+                   <div class="card-body">
+                    <div class="card-icon">
+                      <i id="icn1" class="bi bi-star-fill"></i>
+                      <i id="icn1" class="bi bi-star-fill"></i>
+                      <i id="icn1" class="bi bi-star-fill"></i>
+                      <i id="icn1" class="bi bi-star-fill"></i>
+                      <i id="icn1" class="bi bi-star-half"></i>
+                    </div>
+                        <h4 class="card-title ">Delicious Food</h4>
+                        <h1 class="para01">Lorem ipsum dolor sit
+                           amet consectetur.</h1>                      
+                        <div class="mt-3 text-start">
+                          <button id="btn1" type="button" class="btn btn-primary text-start">Add To Card</button>
+                          <span class="span1">$12.99</span>
+                        </div>            
+                   </div>
+              </div>
+              <div id="shadow" class="card" style="width: 18rem; height: auto;">
+                <img src="./cart2.jpg" height="250px" class="card-img-top p-2" alt="">
+                <i id="icn00" class="bi bi-heart-fill"></i>
+                   <div class="card-body">
+                    <div class="card-icon">
+                      <i id="icn1" class="bi bi-star-fill"></i>
+                      <i id="icn1" class="bi bi-star-fill"></i>
+                      <i id="icn1" class="bi bi-star-fill"></i>
+                      <i id="icn1" class="bi bi-star-fill"></i>
+                      <i id="icn1" class="bi bi-star-half"></i>
+                    </div>
+                        <h4 class="card-title ">Delicious Food</h4>
+                        <h1 class="para01">Lorem ipsum dolor sit
+                           amet consectetur.</h1>
+                        <div class="mt-3 text-start">                        
+                          <button id="btn1" type="button" class="btn btn-primary text-start">Add To Card</button>
+                          <span class="span1">$12.99</span>
+                        </div>            
+                   </div>
+              </div>
+              <div id="shadow" class="card" style="width: 18rem; height: auto;">
+                <img src="./cart3.jpg" height="250px" class="card-img-top p-2" alt="">
+                <i id="icn00" class="bi bi-heart-fill"></i>
+                   <div class="card-body">
+                    <div class="card-icon">
+                      <i id="icn1" class="bi bi-star-fill"></i>
+                      <i id="icn1" class="bi bi-star-fill"></i>
+                      <i id="icn1" class="bi bi-star-fill"></i>
+                      <i id="icn1" class="bi bi-star-fill"></i>
+                      <i id="icn1" class="bi bi-star-half"></i>
+                    </div>
+                        <h4 class="card-title ">Delicious Food</h4>
+                        <h1 class="para01">Lorem ipsum dolor sit
+                           amet consectetur.</h1>
+                        <div class="mt-3 text-start">                         
+                          <button id="btn1" type="button" class="btn btn-primary text-start">Add To Card</button>
+                          <span class="span1">$12.99</span>
+                        </div>            
+                   </div>
+              </div>
+           </div>
+          <div id="row1" class="justify-content-center mt-5">
+              <div id="shadow" class="card" style="width: 18rem; height: auto;">
+                <img src="./cart4.jpg" height="250px" class="card-img-top p-2" alt="">
+                <i id="icn00" class="bi bi-heart-fill"></i>
+                   <div class="card-body">
+                    <div class="card-icon">
+                      <i id="icn1" class="bi bi-star-fill"></i>
+                      <i id="icn1" class="bi bi-star-fill"></i>
+                      <i id="icn1" class="bi bi-star-fill"></i>
+                      <i id="icn1" class="bi bi-star-fill"></i>
+                      <i id="icn1" class="bi bi-star-half"></i>
+                    </div>
+                        <h4 class="card-title ">Delicious Food</h4>
+                        <h1 class="para01">Lorem ipsum dolor sit
+                           amet consectetur.</h1>
+                        <div class="mt-3 text-start">                         
+                          <button id="btn1" type="button" class="btn btn-primary text-start">Add To Card</button>
+                          <span class="span1">$12.99</span>
+                        </div>            
+                   </div>
+              </div>
+              <div id="shadow" class="card" style="width: 18rem; height: auto;">
+                <img src="./cart5.jpg" height="250px" class="card-img-top p-2" alt="">
+                <i id="icn00" class="bi bi-heart-fill"></i>
+                   <div class="card-body">
+                    <div class="card-icon">
+                      <i id="icn1" class="bi bi-star-fill"></i>
+                      <i id="icn1" class="bi bi-star-fill"></i>
+                      <i id="icn1" class="bi bi-star-fill"></i>
+                      <i id="icn1" class="bi bi-star-fill"></i>
+                      <i id="icn1" class="bi bi-star-half"></i>
+                    </div>
+                        <h4 class="card-title ">Delicious Food</h4>
+                        <h1 class="para01">Lorem ipsum dolor sit
+                           amet consectetur.</h1>
+                        <div class="mt-3 text-start">                         
+                          <button id="btn1" type="button" class="btn btn-primary text-start">Add To Card</button>
+                          <span class="span1">$12.99</span>
+                        </div>            
+                   </div>
+              </div>
+              <div id="shadow" class="card" style="width: 18rem; height: auto;">
+                <img src="./cart6.jpg" height="250px" class="card-img-top p-2" alt="">
+                <i id="icn00" class="bi bi-heart-fill"></i>
+                   <div class="card-body">
+                    <div class="card-icon">
+                      <i id="icn1" class="bi bi-star-fill"></i>
+                      <i id="icn1" class="bi bi-star-fill"></i>
+                      <i id="icn1" class="bi bi-star-fill"></i>
+                      <i id="icn1" class="bi bi-star-fill"></i>
+                      <i id="icn1" class="bi bi-star-half"></i>
+                    </div>
+                        <h4 class="card-title ">Delicious Food</h4>
+                        <h1 class="para01">Lorem ipsum dolor sit
+                           amet consectetur.</h1>
+                        <div class="mt-3 text-start">                         
+                          <button id="btn1" type="button" class="btn btn-primary text-start">Add To Card</button>
+                          <span class="span1">$12.99</span>
+                        </div>            
+                   </div>
+              </div>
+           </div>
+           <div id="row1" class="justify-content-center mt-5">
+            <div id="shadow" class="card" style="width: 18rem; height: auto;">
+              <img src="./cart7.jpg" height="250px" class="card-img-top p-2" alt="">
+              <i id="icn00" class="bi bi-heart-fill"></i>
+                 <div class="card-body">
+                  <div class="card-icon">
+                    <i id="icn1" class="bi bi-star-fill"></i>
+                    <i id="icn1" class="bi bi-star-fill"></i>
+                    <i id="icn1" class="bi bi-star-fill"></i>
+                    <i id="icn1" class="bi bi-star-fill"></i>
+                    <i id="icn1" class="bi bi-star-half"></i>
+                  </div>
+                      <h4 class="card-title ">Delicious Food</h4>
+                      <h1 class="para01">Lorem ipsum dolor sit
+                         amet consectetur.</h1>                      
+                      <div class="mt-3 text-startr">
+                        <button id="btn1" type="button" class="btn btn-primary text-start">Add To Card</button>
+                        <span class="span1">$12.99</span>
+                      </div>            
+                 </div>
+            </div>
+            <div id="shadow" class="card" style="width: 18rem; height: auto;">
+              <img src="./cart8.jpg" height="250px" class="card-img-top p-2" alt="">
+              <i id="icn00" class="bi bi-heart-fill"></i>
+                 <div class="card-body">
+                  <div class="card-icon">
+                    <i id="icn1" class="bi bi-star-fill"></i>
+                    <i id="icn1" class="bi bi-star-fill"></i>
+                    <i id="icn1" class="bi bi-star-fill"></i>
+                    <i id="icn1" class="bi bi-star-fill"></i>
+                    <i id="icn1" class="bi bi-star-half"></i>
+                  </div>
+                      <h4 class="card-title ">Delicious Food</h4>
+                      <h1 class="para01">Lorem ipsum dolor sit
+                         amet consectetur.</h1>
+                      <div class="mt-3 text-start">                        
+                        <button id="btn1" type="button" class="btn btn-primary justify-content-start">Add To Card</button>
+                        <span class="span1">$12.99</span>
+                      </div>            
+                 </div>
+            </div>
+            <div id="shadow" class="card" style="width: 18rem; height: auto;">
+               <img id="img00" src="./cart9.jpg" height="250px" class="card-img-top p-2" alt="">
+                 <i id="icn00" class="bi bi-heart-fill"></i>
+                 <div class="card-body">
+                  <div class="card-icon">
+                    <i id="icn1" class="bi bi-star-fill"></i>
+                    <i id="icn1" class="bi bi-star-fill"></i>
+                    <i id="icn1" class="bi bi-star-fill"></i>
+                    <i id="icn1" class="bi bi-star-fill"></i>
+                    <i id="icn1" class="bi bi-star-half"></i>
+                   </div>
+                      <h4 class="card-title ">Delicious Food</h4>
+                      <h1 class="para01">Lorem ipsum dolor sit
+                         amet consectetur.</h1>
+                      <div class="mt-3 text-start">                         
+                        <button id="btn1" type="button" class="btn btn-primary ">Add To Card</button>
+                        <span class="span1">$12.99</span>
+                      </div>            
+                 </div>
+            </div>
+         </div>
+      </div>
+
+
+      <!--cusotmers  -->
+
+      <!-- Carousel wrapper -->
+<div id="carouselMultiItemExample" class="carousel slide carousel-dark text-center" data-bs-ride="carousel">
+  <h5 id="h2" class="text-center mt-5">Customer's Review</h5>
+  <h1 id="h3" class="text-center mb-5">What thay say</h1>
+  <!-- Controls -->
+  <div class="d-flex justify-content-center mb-4">
+    <button class="carousel-control-prev position-relative" type="button"
+      data-bs-target="#carouselMultiItemExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next position-relative" type="button"
+      data-bs-target="#carouselMultiItemExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- Inner -->
+  <div class="carousel-inner py-4">
+    <!-- Single item -->
+    <div class="carousel-item active">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <img class="rounded-circle shadow-1-strong mb-4"
+              src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp" alt="avatar"
+              style="width: 150px;" />
+            <h5 class="mb-3">Anna Deynah</h5>
+            <p>UX Designer</p>
+            <p class="text-muted">
+              <i class="fas fa-quote-left pe-2"></i>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id
+              officiis hic tenetur quae quaerat ad velit ab hic tenetur.
+            </p>
+            <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+              <i id="icn1" class="bi bi-star-fill"></i>
+              <i id="icn1" class="bi bi-star-fill"></i>
+              <i id="icn1" class="bi bi-star-fill"></i>
+              <i id="icn1" class="bi bi-star-fill"></i>
+              <i id="icn1" class="bi bi-star-half"></i>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 d-none d-lg-block">
+            <img class="rounded-circle shadow-1-strong mb-4"
+              src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(32).webp" alt="avatar"
+              style="width: 150px;" />
+            <h5 class="mb-3">John Doe</h5>
+            <p>Web Developer</p>
+            <p class="text-muted">
+              <i class="fas fa-quote-left pe-2"></i>
+              Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
+              suscipit laboriosam, nisi ut aliquid commodi.
+            </p>
+            <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+              <i id="icn1" class="bi bi-star-fill"></i>
+              <i id="icn1" class="bi bi-star-fill"></i>
+              <i id="icn1" class="bi bi-star-fill"></i>
+              <i id="icn1" class="bi bi-star-fill"></i>
+              <i id="icn1" class="bi bi-star-half"></i>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 d-none d-lg-block">
+            <img class="rounded-circle shadow-1-strong mb-4"
+              src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp" alt="avatar"
+              style="width: 150px;" />
+            <h5 class="mb-3">Maria Kate</h5>
+            <p>Photographer</p>
+            <p class="text-muted">
+              <i class="fas fa-quote-left pe-2"></i>
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+              praesentium voluptatum deleniti atque corrupti.
+            </p>
+            <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+              <i id="icn1" class="bi bi-star-fill"></i>
+                    <i id="icn1" class="bi bi-star-fill"></i>
+                    <i id="icn1" class="bi bi-star-fill"></i>
+                    <i id="icn1" class="bi bi-star-fill"></i>
+                    <i id="icn1" class="bi bi-star-half"></i>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Single item -->
+    <div class="carousel-item">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <img class="rounded-circle shadow-1-strong mb-4"
+              src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(3).webp" alt="avatar"
+              style="width: 150px;" />
+            <h5 class="mb-3">John Doe</h5>
+            <p>UX Designer</p>
+            <p class="text-muted">
+              <i class="fas fa-quote-left pe-2"></i>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id
+              officiis hic tenetur quae quaerat ad velit ab hic tenetur.
+            </p>
+            <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+              <i id="icn1" class="bi bi-star-fill"></i>
+              <i id="icn1" class="bi bi-star-fill"></i>
+              <i id="icn1" class="bi bi-star-fill"></i>
+              <i id="icn1" class="bi bi-star-fill"></i>
+              <i id="icn1" class="bi bi-star-half"></i>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 d-none d-lg-block">
+            <img class="rounded-circle shadow-1-strong mb-4"
+              src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(4).webp" alt="avatar"
+              style="width: 150px;" />
+            <h5 class="mb-3">Alex Rey</h5>
+            <p>Web Developer</p>
+            <p class="text-muted">
+              <i class="fas fa-quote-left pe-2"></i>
+              Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
+              suscipit laboriosam, nisi ut aliquid commodi.
+            </p>
+            <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+              <i id="icn1" class="bi bi-star-fill"></i>
+              <i id="icn1" class="bi bi-star-fill"></i>
+              <i id="icn1" class="bi bi-star-fill"></i>
+              <i id="icn1" class="bi bi-star-fill"></i>
+              <i id="icn1" class="bi bi-star-half"></i>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 d-none d-lg-block">
+            <img class="rounded-circle shadow-1-strong mb-4"
+              src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(5).webp" alt="avatar"
+              style="width: 150px;" />
+            <h5 class="mb-3">Maria Kate</h5>
+            <p>Photographer</p>
+            <p class="text-muted">
+              <i class="fas fa-quote-left pe-2"></i>
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+              praesentium voluptatum deleniti atque corrupti.
+            </p>
+            <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+              <i id="icn1" class="bi bi-star-fill"></i>
+              <i id="icn1" class="bi bi-star-fill"></i>
+              <i id="icn1" class="bi bi-star-fill"></i>
+              <i id="icn1" class="bi bi-star-fill"></i>
+              <i id="icn1" class="bi bi-star-half"></i>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Single item -->
+    <div class="carousel-item">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <img class="rounded-circle shadow-1-strong mb-4"
+              src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(6).webp" alt="avatar"
+              style="width: 150px;" />
+            <h5 class="mb-3">Anna Deynah</h5>
+            <p>UX Designer</p>
+            <p class="text-muted">
+              <i class="fas fa-quote-left pe-2"></i>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id
+              officiis hic tenetur quae quaerat ad velit ab hic tenetur.
+            </p>
+            <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+              <i id="icn1" class="bi bi-star-fill"></i>
+              <i id="icn1" class="bi bi-star-fill"></i>
+              <i id="icn1" class="bi bi-star-fill"></i>
+              <i id="icn1" class="bi bi-star-fill"></i>
+              <i id="icn1" class="bi bi-star-half"></i>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 d-none d-lg-block">
+            <img class="rounded-circle shadow-1-strong mb-4"
+              src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(8).webp" alt="avatar"
+              style="width: 150px;" />
+            <h5 class="mb-3">John Doe</h5>
+            <p>Web Developer</p>
+            <p class="text-muted">
+              <i class="fas fa-quote-left pe-2"></i>
+              Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
+              suscipit laboriosam, nisi ut aliquid commodi.
+            </p>
+            <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+              <i id="icn1" class="bi bi-star-fill"></i>
+              <i id="icn1" class="bi bi-star-fill"></i>
+              <i id="icn1" class="bi bi-star-fill"></i>
+              <i id="icn1" class="bi bi-star-fill"></i>
+              <i id="icn1" class="bi bi-star-half"></i>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 d-none d-lg-block">
+            <img class="rounded-circle shadow-1-strong mb-4"
+              src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(7).webp" alt="avatar"
+              style="width: 150px;" />
+            <h5 class="mb-3">Maria Kate</h5>
+            <p>Photographer</p>
+            <p class="text-muted">
+              <i class="fas fa-quote-left pe-2"></i>
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+              praesentium voluptatum deleniti atque corrupti.
+            </p>
+            <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+              <i id="icn1" class="bi bi-star-fill"></i>
+              <i id="icn1" class="bi bi-star-fill"></i>
+              <i id="icn1" class="bi bi-star-fill"></i>
+              <i id="icn1" class="bi bi-star-fill"></i>
+              <i id="icn1" class="bi bi-star-half"></i>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- form -->
+
+<section class="container-fluid px-5  bg-light">
+  
+       <h2 id="h4" class="text-center mt-20">Order Now</h4>
+        <h1 id="h3" class="text-center">Free And Fast</h1>
+    <form class="px-5 bg-white">
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <label for="name" class="form-label ">Your Name:</label>
+          <input type="text" class="form-control bg-light" id="name" name="name" placeholder="enter your name" required>
+        </div>
+
+        <div class="col-md-6">
+          <label for="number" class="form-label">Your Number:</label>
+          <input type="tel" class="form-control bg-light" id="number" name="number" placeholder="enter your number" required>
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <label for="order" class="form-label">Your Order:</label>
+          <input type="text" class="form-control bg-light" id="order" name="order" placeholder="enter food name" required>
+        </div>
+
+        <div class="col-md-6">
+          <label for="additional_food" class="form-label">Additional Food:</label>
+          <input type="text" class="form-control bg-light" id="additional_food" name="additional_food" placeholder="extra with food">
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <label for="quantity" class="form-label">How Much:</label>
+          <input type="number" class="form-control bg-light" id="quantity" name="quantity" placeholder="how many orders" required>
+        </div>
+
+        <div class="col-md-6">
+          <label for="date_time" class="form-label">Date and Time:</label>
+          <input type="datetime-local" class="form-control bg-light" id="date_time" name="date_time" required>
+        </div>
+      </div>
+
+          <div class="row mb-3">
+             <div class="col-md-6">
+                  <label for="address" class="form-label">your Address:</label>
+                  <textarea class="form-control bg-light" id="address" name="address" placeholder="enter your address" required></textarea>
+             </div>
+
+             <div class="col-md-6">
+                 <label for="message" class="form-label">your Message:</label>
+                 <textarea class="form-control bg-light" id="message" name="message" placeholder="enter your message"></textarea>
+             </div>
+           </div>
+
+      <button type="submit" class="btn btn-primary">Order Now</button>
+    </form>
+
+</section>
+
+
+<!-- Footer -->
+
+
+<footer class="text-center text-lg-start bg-white text-muted">
+  <!-- Section: Social media -->
+ <!-- Section: Links  -->
+  <section id="bor" class="  container">
+    <div class="container row  text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row col-md-5 mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 row col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase row fw-bold mb-4">
+            <i class="fas fa-gem me-3 text-secondary"></i>location
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">india</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">japan</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">UAE</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">France</a>
+          </p>
+      
+        </div>
+         
+        </div>
+
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+           Quick links
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Pricing</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Settings</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Orders</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Help</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+        <div class="col-md-4 justify-content-center   mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            contact info
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">+9235555</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">+923455</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">+923467585</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">ajazulhaq244@gmail.com</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">ajazulhaq244@gmail.com</a>
+          </p>
+         
+        </div>
+        <!-- Grid column -->
+
+      </div>
+        <!-- Grid column -->
+        <div class="col-md-5 text-center  mb-md-0 mb-4">
+          
+          <h6 class="text-uppercase fw-bold mb-4">follow us</h6>
+          <p> facebook</p>
+          <p>twiter </p>        
+          <p>instagram</p>
+          <p> linkedin</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+     
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div id="footer" class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+    © 2022 Copyright:
+    <a class="text-reset fw-bold text-sucess" href=""> Resto resturants</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+
+ </body>
+
+</html> 
